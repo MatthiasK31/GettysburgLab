@@ -17,7 +17,7 @@ public class WordLister {
                 if (words.get(position).charAt(i) == ',')
                     continue;
                 else
-                    temp = temp + words.get(position).charAt(i);
+                    temp += words.get(position).charAt(i);
             }
             words.set(position, temp);
             position++;
