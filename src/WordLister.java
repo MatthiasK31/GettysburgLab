@@ -25,6 +25,7 @@ public class WordLister {
 
         System.out.println(words);
         System.out.println(word);
+        System.out.println("hi");
 
     }
 }
