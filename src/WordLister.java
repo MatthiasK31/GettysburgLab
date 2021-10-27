@@ -1,14 +1,17 @@
-import java.text.DecimalFormat;
-import java.util.*;
 import java.io.*;
+import java.util.*;
 
-
+/*
+Matthias Kim
+Gettysburg Lab
+10/26/2021
+Runs through the Gettysburg Address which is pretty cool I guess.
+ */
 
 public class WordLister {
     public static void main(String[] args) {
         try {
             //variable declarations
-            String word = "";
             Scanner in = new Scanner(System.in);
             Scanner file = new Scanner(new File("src\\gettysburg.txt"));
             ArrayList<String> words = new ArrayList<>();
