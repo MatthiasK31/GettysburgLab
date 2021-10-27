@@ -22,19 +22,14 @@ public class WordLister {
                 System.out.println(value);
             }
 
-            //can do enhanced for loop to sort
-
             //loop through the entire arraylist and take the average of the lengths
-
             double average = 0;
             int longestLength = words.get(0).length();
             String longestWord = words.get(0);
             for (String s : words){
                 StringBuilder temp = new StringBuilder();
                 for (int i = 0; i < s.length(); i++) {
-                    if (s.charAt(i) == ',' || s.charAt(i) == '.' || s.charAt(i) == '-')
-                        continue;
-                    else
+                    if (!(s.charAt(i) == ',' || s.charAt(i) == '.' || s.charAt(i) == '-'))
                         temp.append(s.charAt(i));
                 }
                 if (s.length() > longestLength) {
@@ -54,8 +49,6 @@ public class WordLister {
                 }
             }
             System.out.printf("The word %s was found a total of %d times.\n", searchWord, timesFound);
-
-
             System.out.printf("The average length of a word is %.2f letters.\n", average);
             System.out.printf("The longest word is %s, with a length of %d letters.\n", longestWord, longestLength);
 
