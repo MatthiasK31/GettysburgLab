@@ -1,0 +1,14 @@
+while (file.hasNext())
+{
+    String temp = "";
+    words.add(file.next());
+
+    for (int i = 0; i < words.get(position).length(); i++) {
+        if (words.get(position).charAt(i) == ',')
+            continue;
+        else
+            temp += words.get(position).charAt(i);
+    }
+    words.set(position, temp);
+    position++;
+}
