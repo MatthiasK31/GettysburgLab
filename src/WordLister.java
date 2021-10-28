@@ -1,5 +1,4 @@
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
@@ -103,7 +102,6 @@ public class WordLister {
             System.out.printf("The average length of a word is %.2f letters.\n", average);
             System.out.printf("The longest word is %s, with a length of %d letters.\n", longestWord, longestLength);
 
-
             //lexi countdown
             w.countdown(1);
             //print in lexicographic order
@@ -119,7 +117,6 @@ public class WordLister {
             for (String order : words){
                 System.out.println(order);
             }
-
 
             //duplicate countdown
             w.countdown(2);
